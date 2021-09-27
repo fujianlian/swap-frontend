@@ -1,0 +1,40 @@
+{
+  "name":"Alaya Default List",
+  "logoURI":"https://www.coingecko.com/assets/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png",
+  "keywords":[
+    "defi"
+  ],
+  "tokens":[
+    {
+      "name": "Wrapped ATP",
+      "address": "atp18687ez6s7g8n7nn6l6zt5senxc3xkltapw63ae",
+      "symbol": "WATP",
+      "decimals": 18,
+      "chainId": 201018,
+      "logoURI": "http://10.1.1.50:8080/WATP.svg"
+    },
+    {
+      "chainId":201018,
+      "address":"atp15y466r5qhmsh4f92tdtxy9728n7asrreq29xca",
+      "name":"Alaya USDT",
+      "symbol":"aUSDT",
+      "decimals":6,
+      "logoURI": "http://10.1.1.50:8080/aUSDT.svg"
+    },
+    {
+      "chainId":201018,
+      "address":"atp1fxe3drv2yte0k8cstjr3v7at4ckrcmnzqalh0s",
+      "name":"Alaya ETH",
+      "symbol":"aETH",
+      "decimals":18,
+      "logoURI":"http://10.1.1.50:8080/aETH.svg"
+    }
+  ],
+  "timestamp":"2020-12-18T03:00:52.239+00:00",
+  "version":{
+    "major":67,
+    "minor":4,
+    "patch":0
+  }
+}
+

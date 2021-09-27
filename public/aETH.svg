@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="15px" viewBox="0 0 25 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>编组 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 9.53796016 1.70140275 9.53796016 4.86807556 3.37709844 3.96524679 1.72228562"></polygon>
+        <path d="M3.03212175,8.3622841 L4.15629149,8.3622841 C4.50256,8.3622841 4.81942332,8.16846601 4.97607285,7.86098151 L4.97607285,7.86098151 L5.15161298,7.51572641 L6.25493176,9.53796016 L8.22917913,9.53796016 L5.22949221,4.04065497 L3.03212175,8.3622841 Z" id="path-3"></path>
+        <path d="M2.46451226,0.146737849 C2.19897439,0.146737849 1.98369267,0.360948509 1.98369267,0.625342626 L1.98369267,0.625342626 L1.98369267,1.12948245 L5.9747804,1.12948245 L5.9747804,0.625342626 C5.9747804,0.360948509 5.75949868,0.146737849 5.49396081,0.146737849 L5.49396081,0.146737849 L2.46451226,0.146737849 Z" id="path-5"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="17.History" transform="translate(-1185.000000, -199.000000)">
+            <g id="编组-6" transform="translate(1185.000000, 199.000000)">
+                <g id="编组备份-2" fill-rule="nonzero">
+                    <path d="M14.9757263,7.48791834 C14.9757263,11.6230934 11.6233143,14.9755055 7.48813915,14.9755055 C3.35241202,14.9755055 0,11.6230934 0,7.48791834 C0,3.35219121 3.35241202,0.000331211462 7.48813915,0.000331211462 C11.6233143,0.000331211462 14.9757263,3.35219121 14.9757263,7.48791834" id="Fill-1" fill="#687EE3"></path>
+                    <polygon id="Fill-3" fill="#DEE2F6" points="7.48786314 1.27014076 3.5889522 7.50464452 7.48786314 5.72824704"></polygon>
+                    <polygon id="Fill-5" fill="#D2D8EC" points="7.48786314 5.72835744 3.5889522 7.50475492 7.48786314 9.64217289"></polygon>
+                    <polygon id="Fill-7" fill="#DEE2F6" points="7.48786314 10.4393989 3.5282301 8.23353054 7.48786314 13.7056959"></polygon>
+                    <polygon id="Fill-9" fill="#D2D8EC" points="7.48786314 10.4393989 11.4474962 8.23353054 7.48786314 13.7056959"></polygon>
+                    <polygon id="Fill-11" fill="#C4C8D9" points="7.48786314 5.72835744 11.386222 7.50475492 7.48786314 9.64217289"></polygon>
+                    <polygon id="Fill-13" fill="#D0D6EA" points="7.48786314 1.27014076 11.386222 7.50464452 7.48786314 5.72824704"></polygon>
+                </g>
+                <g id="编组-5备份-9" transform="translate(10.013952, 0.000000)">
+                    <circle id="椭圆形" fill="#63328D" cx="7.42159018" cy="7.42159018" r="7.42159018"></circle>
+                    <g id="Icon备份" transform="translate(2.024070, 1.281911)">
+                        <rect id="Base" x="0" y="0" width="10.7950403" height="10.7950403"></rect>
+                        <g id="编组" transform="translate(1.199449, 0.599724)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Clip-6" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Clip-8" fill="#FFFFFF" xlink:href="#path-3"></use>
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Clip-12" fill="#FCB54D" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

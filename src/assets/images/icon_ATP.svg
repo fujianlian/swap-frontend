@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>编组 5备份 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 14.9963211 2.67507743 14.9963211 7.65396617 5.30973623 6.23446871 2.70791111"></polygon>
+        <path d="M4.76733711,13.147832 L6.53484401,13.147832 C7.07927424,13.147832 7.57747134,12.8430962 7.82376788,12.3596451 L7.82376788,12.3596451 L8.09976571,11.8168083 L9.83448911,14.9963211 L12.938554,14.9963211 L8.22221347,6.3530313 L4.76733711,13.147832 Z" id="path-3"></path>
+        <path d="M3.87489743,0.230712633 C3.45739818,0.230712633 3.11891556,0.567511255 3.11891556,0.983212204 L3.11891556,0.983212204 L3.11891556,1.77585996 L9.39401339,1.77585996 L9.39401339,0.983212204 C9.39401339,0.567511255 9.05553077,0.230712633 8.63803152,0.230712633 L8.63803152,0.230712633 L3.87489743,0.230712633 Z" id="path-5"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="17.History" transform="translate(-1184.000000, -400.000000)">
+            <g id="编组-5备份-4" transform="translate(1184.000000, 400.000000)">
+                <circle id="椭圆形" fill="#63328D" cx="12.7296" cy="12.7296" r="12.7296"></circle>
+                <g id="Icon备份" transform="translate(4.243200, 2.970240)">
+                    <rect id="Base" x="0" y="0" width="16.9728" height="16.9728"></rect>
+                    <g id="编组" transform="translate(1.885867, 0.942933)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Clip-6" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Clip-8" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Clip-12" fill="#FCB54D" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

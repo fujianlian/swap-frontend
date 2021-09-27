@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.051,26.718 C0.051,41.473 12.013,53.436 26.768,53.436 L26.768,53.436 C41.524,53.436 53.485,41.473 53.485,26.718 L53.485,26.718 C53.485,11.962 41.524,0 26.768,0 L26.768,0 C12.013,0 0.051,11.962 0.051,26.718 L0.051,26.718 Z" id="path-1"></path>
+        <path d="M2.527,0.302 C1.572,0.302 0.797,1.073 0.797,2.025 L0.797,2.025 L0.797,3.84 L15.164,3.84 L15.164,2.025 C15.164,1.073 14.389,0.302 13.433,0.302 L13.433,0.302 L2.527,0.302 Z" id="path-3"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2备份-10" transform="translate(-933.000000, -538.000000)">
+            <g id="编组" transform="translate(933.000000, 538.000000)">
+                <g>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <polygon id="Fill-1" fill="#63328D" mask="url(#mask-2)" points="-4.95 58.436 58.486 58.436 58.486 -5 -4.95 -5"></polygon>
+                </g>
+                <polygon id="Fill-3" fill="#FFFFFF" points="29.6309 22.4902 27.0309 17.7232 18.9649 33.6222 14.1899 18.7452 8.9809 17.2142 16.1539 39.1622 16.5049 40.2332 17.7939 40.2332 20.5109 40.2332"></polygon>
+                <path d="M38.7183,39.1475 L45.8863,17.2135 L40.6783,18.7455 L35.8293,33.8525 L30.6723,24.4005 L24.3433,36.8475 L27.5813,36.8475 C28.5783,36.8475 29.4903,36.2895 29.9423,35.4035 L30.4473,34.4095 L33.6253,40.2335 L37.0733,40.2335 L38.3633,40.2335 L38.7183,39.1475 Z" id="Fill-4" fill="#FFFFFF"></path>
+                <g transform="translate(19.000000, 11.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-7"></g>
+                    <polygon id="Fill-6" fill="#FCB54D" mask="url(#mask-4)" points="-4.204 8.84 20.164 8.84 20.164 -4.698 -4.204 -4.698"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

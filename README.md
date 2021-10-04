@@ -1,6 +1,6 @@
 ## Intro
 
-** None rigorous verification and testing has been done to this project, issues might still exists in the project. Contribution and improvement from community developers are welcome. **
+** No rigorous verification and testing has been done on this project, issues might still exists in the project. Contribution and improvement from community developers are welcome. **
 
 The project is cloned from uniswap v2. This repo is the front-end part of the project. For the contract of the project, please refer to: https://github.com/treelaketreelake/swap-contracts.
 

@@ -1,30 +1,30 @@
-## 介绍
+## Intro
 
-**本项目没有经过严格的验证测试，可能还存在一些问题，欢迎社区开发者共同完善。**
+** No rigorous verification and testing has been done on this project, issues might still exists in the project. Contribution and improvement from community developers are welcome. **
 
-此项目从uniswap v2克隆，本项目是前端项目部分，合约部分请参考：https://github.com/treelaketreelake/swap-contracts。
+The project is cloned from uniswap v2. This repo is the front-end part of the project. For the contract of the project, please refer to: https://github.com/treelaketreelake/swap-contracts.
 
-此项目已经在[Alaya](https://devdocs.alaya.network/alaya-devdocs/zh-CN/)网络上面跑通主体流程，包括:
+The main process of this project has been verified working on the [Alaya](https://devdocs.alaya.network/alaya-devdocs/zh-CN/) network, including following features:
 
-* 连接Samurai钱包。
-* 增加和移除交易对的流动性。
-* token之间的交换。
+* Connect to Samurai wallet.
+* Add and remove the liquidity of trading pairs.
+* Exchange between tokens.
 
-## 运行
+## Run
 
-### 开发调试
+### Development and Debugging
 
 ```shell
 yarn
 yarn start
 ```
 
-### 发布
+### Publish
 
 ```
 yarn build
 ```
 
-## 整体上线流程
+## Overall Go Live Process
 
-请参考文档：https://github.com/treelaketreelake/swap-frontend/tree/main/docs/deploy.md
+Please refer to: https://github.com/treelaketreelake/swap-frontend/tree/main/docs/deploy.md

@@ -56,7 +56,7 @@ export function CurrencySearch({
   const allTokens = useAllTokens()
 
   // if they input an address, use it
-  const hrp = chainId.toString() === '201018' ? 'atp': 'atx'
+  const hrp = chainId.toString() === '201030' ? 'atp': 'atx'
   const isAddressSearch = isBech32Address(searchQuery) && searchQuery.startsWith(hrp) ? searchQuery : false
   const searchToken = useToken(searchQuery)
 
@@ -116,7 +116,10 @@ export function CurrencySearch({
   const inputRef = useRef<HTMLInputElement>()
   const handleInput = useCallback(event => {
     const input = event.target.value
+    console.log('===input',input)
     const checksummedInput = isBech32Address(input) ? input : false
+    console.log('===checksummedInput',checksummedInput)
+
     setSearchQuery(checksummedInput || input)
     fixedList.current?.scrollTo(0)
   }, [])
@@ -173,7 +176,6 @@ export function CurrencySearch({
       </PaddedColumn>
 
       <Separator />
-
       <div style={{ flex: '1' }}>
         <AutoSizer disableWidth>
           {({ height }) => (

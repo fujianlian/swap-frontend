@@ -97,7 +97,7 @@ export function useDataFromEventLogs() {
 // get data for all past and active proposals
 export function useAllProposalData() {
   const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
-  const hrp = chainId.toString() === '201018' ? 'atp' : 'atx'
+  const hrp = chainId.toString() === '201030' ? 'atp' : 'atx'
   const proposalCount = useProposalCount()
   const govContract = useGovernanceContract()
 
@@ -156,7 +156,7 @@ export function useUserDelegatee(): string {
   let address = result?.[0] ?? undefined
   if (address && !isBech32Address(address)) {
     const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
-    const hrp = chainId.toString() === '201018' ? 'atp' : 'atx'
+    const hrp = chainId.toString() === '201030' ? 'atp' : 'atx'
     address = toBech32Address(hrp, address)
   }
   return address

@@ -137,7 +137,7 @@ export default function VotePage({
   // show links in propsoal details if content is an address
   const linkIfAddress = (content: string) => {
     if (isAddress(content) && !isBech32Address(content)) {
-      const hrp = chainId.toString() === '201018' ? 'atp' : 'atx'
+      const hrp = chainId.toString() === '201030' ? 'atp' : 'atx'
       content = toBech32Address(hrp, content)
     }
     if (isAddress(content) && chainId) {

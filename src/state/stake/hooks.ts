@@ -7,7 +7,7 @@ import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
 import { tryParseAmount } from '../swap/hooks'
 
-export const STAKING_GENESIS = 1612511802
+export const STAKING_GENESIS = 1600744959
 
 export const REWARDS_DURATION_DAYS = 30
 
@@ -39,7 +39,7 @@ export const STAKING_REWARDS_INFO: {
   [ChainId.ALAYA]: [
     {
       tokens: [WETH[ChainId.ALAYA], aUSDT],
-      stakingRewardAddress: 'atp1qz0fxqmzu3drfzsze9qta9zxw2luqjkl5d56vf'
+      stakingRewardAddress: 'atp1p9lqv0ljfrnkj303wncvf3yfk4jawpncj0gds8'
     }
   ]
 }

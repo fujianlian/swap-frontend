@@ -3,11 +3,11 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { injected } from '../connectors'
 
-export const ROUTER_ADDRESS = 'atp1re4fdhyswcrgsgn7akt4et2xcjkekzrdj7rqqu'
+export const ROUTER_ADDRESS = 'atp1qat8eans50a36h020e7spc7qxgm9sumjxyldgk'
 
 // export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
-export const ZERO_ADDRESS = chainId.toString() === '201018' ? 'atp1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqdruy9j' : 'atx1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq89qwkc'
+export const ZERO_ADDRESS = chainId.toString() === '201030' ? 'atp1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqdruy9j' : 'atx1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq89qwkc'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -21,15 +21,15 @@ export const COMP = new Token(ChainId.MAINNET, '0xc00e94Cb662C3520282E6f57172140
 export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2', 18, 'MKR', 'Maker')
 export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
 export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', 18, 'WBTC', 'Wrapped BTC')
-export const aUSDT = new Token(ChainId.ALAYA, 'atp15y466r5qhmsh4f92tdtxy9728n7asrreq29xca', 6, 'aUSDT', 'Alaya USDT')
+export const aUSDT = new Token(ChainId.ALAYA, '0x097e063ff248e76945f174f0c4c489b565d70678', 6, 'aUSDT', 'Alaya USDT')
 
 // TODO this is only approximate, it's actually based on blocks
 export const PROPOSAL_LENGTH_IN_DAYS = 7
 
-export const GOVERNANCE_ADDRESS = 'atp1pma5nc9pcrpjrxtxns9ede0teaau8q5hxhfmks'
-export const TIMELOCK_ADDRESS = 'atp1v3kcdmrpvcphx0aetpxgmyn4l84sj3fyddrszd'
+export const GOVERNANCE_ADDRESS = '0xa7370f94b5ffa03b07f9a0d12291c3ed764bed0c'
+export const TIMELOCK_ADDRESS = '0x91f67c872401f18b85c66afc4bed8f641fd13bc5'
 
-const UNI_ADDRESS = 'atp1l7z3v5hya7s4zratpfclwvj2pmp9jk5wavmz2y'
+const UNI_ADDRESS = '0x690837152cf183fab687e6df331c619e8433ab01'
 export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),

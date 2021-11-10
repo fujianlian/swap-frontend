@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 import { useSelectedTokenList } from '../state/lists/hooks'
 import { NEVER_RELOAD, useSingleCallResult } from '../state/multicall/hooks'
 import { useUserAddedTokens } from '../state/user/hooks'
-import { isBech32Address } from '@alayanetwork/web3-utils'
+import { isBech32Address,decodeBech32Address } from '@alayanetwork/web3-utils'
 // import { isAddress } from '../utils'
 
 // import { useActiveWeb3React } from './index'
@@ -56,7 +56,7 @@ function parseStringOrBytes32(str: string | undefined, bytes32: string | undefin
 export function useToken(tokenAddress?: string): Token | undefined | null {
   // const { chainId } = useActiveWeb3React()
   const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
-  const hrp = chainId.toString() === '201018' ? 'atp' : 'atx'
+  const hrp = chainId.toString() === '201030' ? 'atp' : 'atx'
   const tokens = useAllTokens()
 
   const address = tokenAddress && isBech32Address(tokenAddress) && tokenAddress.startsWith(hrp) ? tokenAddress : false
@@ -83,7 +83,7 @@ export function useToken(tokenAddress?: string): Token | undefined | null {
     if (decimals.result) {
       return new Token(
         chainId,
-        address,
+        decodeBech32Address(address),
         decimals.result[0],
         parseStringOrBytes32(symbol.result?.[0], symbolBytes32.result?.[0], 'UNKNOWN'),
         parseStringOrBytes32(tokenName.result?.[0], tokenNameBytes32.result?.[0], 'Unknown Token')

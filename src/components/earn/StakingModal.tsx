@@ -73,7 +73,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
 
   // pair contract for this token to be staked
   const dummyPair = new Pair(new TokenAmount(stakingInfo.tokens[0], '0'), new TokenAmount(stakingInfo.tokens[1], '0'))
-  const hrp = chainId.toString() === '201018' ? 'atp' : 'atx'
+  const hrp = chainId.toString() === '201030' ? 'atp' : 'atx'
   let contractAddress = ''
   if (dummyPair?.liquidityToken?.address) {
     contractAddress = toBech32Address(hrp, dummyPair.liquidityToken.address)

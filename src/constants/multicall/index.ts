@@ -7,7 +7,7 @@ const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
   [ChainId.KOVAN]: '0x2cc8688C5f75E365aaEEb4ea8D6a480405A48D2A',
   [ChainId.RINKEBY]: '0x42Ad527de7d4e9d9d011aC45B31D8551f8Fe9821',
   [ChainId.GÖRLI]: '0x77dCa2C955b15e9dE4dbBCf1246B4B85b651e50e',
-  [ChainId.ALAYA]: 'atp1g7p4qse8wmx45uqvdyjs0prnt84nxzwg5gd6k0'
+  [ChainId.ALAYA]: '0x54dae00458f2e5cb434fcd405537b60003848def'
 }
 
 export { MULTICALL_ABI, MULTICALL_NETWORKS }

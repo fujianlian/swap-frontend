@@ -6,7 +6,7 @@ export function filterTokens(tokens: Token[], search: string): Token[] {
   if (search.length === 0) return tokens
 
   const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
-  const hrp = chainId.toString() === '201018' ? 'atp' : 'atx'
+  const hrp = chainId.toString() === '201030' ? 'atp' : 'atx'
   const searchingAddress = isBech32Address(search) && search.startsWith(hrp) ? search : false
 
   if (searchingAddress) {

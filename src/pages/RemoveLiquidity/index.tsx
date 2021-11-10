@@ -101,7 +101,7 @@ export default function RemoveLiquidity({
   // pair contract
   let contractAddress = ''
   if (pair?.liquidityToken?.address) {
-    const hrp = chainId.toString() === '201018'? 'atp': 'atx';
+    const hrp = chainId.toString() === '201030'? 'atp': 'atx';
     contractAddress = toBech32Address(hrp, pair.liquidityToken.address)
   }
   const pairContract: Contract | null = usePairContract(

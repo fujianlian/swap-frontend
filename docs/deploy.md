@@ -230,7 +230,7 @@ const UNI_ADDRESS = 'atp1msjp532u4tejc39ysqvcapwujy5s8gf5qckr0f'
 - src/constants/list.ts(第2行)
 
 ```javascript
-export const DEFAULT_TOKEN_LIST_URL = 'http://10.1.1.50:8080/token-list.json'
+export const DEFAULT_TOKEN_LIST_URL = 'http://localhost:3000/token-list.json'
 ```
 
 这个默认的json列表所在的URL地址需要替换成可以访问到token-list.json文件的URL地址
@@ -250,24 +250,24 @@ export const DEFAULT_TOKEN_LIST_URL = 'http://10.1.1.50:8080/token-list.json'
       "address": "atp1khdytqr63arj0gj7dhgygj2j8pzd8685fgl5zu",
       "symbol": "WATP",
       "decimals": 18,
-      "chainId": 201018,
-      "logoURI": "http://10.1.1.50:8080/WATP.svg"
+      "chainId": 201030,
+      "logoURI": "http://localhost:3000/WATP.svg"
     },
     {
-      "chainId":201018,
+      "chainId":201030,
       "address":"atp1qpf309dvr4d408e28q3e6e05td8hmr7vstfuyy",
       "name":"Alaya USDT",
       "symbol":"aUSDT",
       "decimals":6,
-      "logoURI": "http://10.1.1.50:8080/aUSDT.svg"
+      "logoURI": "http://localhost:3000/aUSDT.svg"
     },
     {
-      "chainId":201018,
+      "chainId":201030,
       "address":"atp15gvqr36c6v5nh6q96d24295g46gg4lpr0sa6ee",
       "name":"Alaya ETH",
       "symbol":"aETH",
       "decimals":18,
-      "logoURI":"http://10.1.1.50:8080/aETH.svg"
+      "logoURI":"http://localhost:3000/aETH.svg"
     }
   ],
   "timestamp":"2020-12-18T03:00:52.239+00:00",
@@ -284,8 +284,8 @@ export const DEFAULT_TOKEN_LIST_URL = 'http://10.1.1.50:8080/token-list.json'
 - .env.production
 
 ```
-REACT_APP_CHAIN_ID="201018"
-REACT_APP_NETWORK_URL="http://10.1.1.50:8080/api"
+REACT_APP_CHAIN_ID="201030"
+REACT_APP_NETWORK_URL="http://localhost:3000/api"
 REACT_APP_SCAN_PREFIXES="http://10.1.1.48:8888"
 ```
 

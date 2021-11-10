@@ -25,7 +25,7 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   4: 'rinkeby.',
   5: 'goerli.',
   42: 'kovan.',
-  201018: process.env.REACT_APP_SCAN_PREFIXES ?? 'https://scan.alaya.network'
+  201030: process.env.REACT_APP_SCAN_PREFIXES ?? 'https://scan.alaya.network'
 }
 
 export function getEtherscanLink(

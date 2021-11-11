@@ -116,10 +116,7 @@ export function CurrencySearch({
   const inputRef = useRef<HTMLInputElement>()
   const handleInput = useCallback(event => {
     const input = event.target.value
-    console.log('===input',input)
     const checksummedInput = isBech32Address(input) ? input : false
-    console.log('===checksummedInput',checksummedInput)
-
     setSearchQuery(checksummedInput || input)
     fixedList.current?.scrollTo(0)
   }, [])

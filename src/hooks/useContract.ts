@@ -22,11 +22,19 @@ import { MULTICALL_ABI, MULTICALL_NETWORKS } from '../constants/multicall'
 import { V1_EXCHANGE_ABI, V1_FACTORY_ABI, V1_FACTORY_ADDRESSES } from '../constants/v1'
 import { getContract } from '../utils'
 import { useActiveWeb3React } from './index'
+import { isBech32Address, toBech32Address } from '@alayanetwork/web3-utils'
+
+export function getBech32Address(address: string | undefined): | string | undefined {
+  if (!isBech32Address(address ?? "")) {
+    address = toBech32Address('atp', address!!);
+  }
+  return address
+}
 
 // returns null on errors
 function useContract(address: string | undefined, ABI: any, withSignerIfPossible = true): Contract | null {
   const { library, account } = useActiveWeb3React()
-
+  address = getBech32Address(address)
   return useMemo(() => {
     if (!address || !ABI || !library) return null
     try {

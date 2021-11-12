@@ -38,6 +38,7 @@ import { Dots, Wrapper } from '../Pool/styleds'
 import { ConfirmAddModalBottom } from './ConfirmAddModalBottom'
 import { currencyId } from '../../utils/currencyId'
 import { PoolPriceBar } from './PoolPriceBar'
+import { getBech32Address } from '../../hooks/useContract'
 
 export default function AddLiquidity({
   match: {
@@ -55,8 +56,8 @@ export default function AddLiquidity({
 
   const oneCurrencyIsWETH = Boolean(
     chainId &&
-      ((currencyA && currencyEquals(currencyA, WETH[chainId])) ||
-        (currencyB && currencyEquals(currencyB, WETH[chainId])))
+    ((currencyA && currencyEquals(currencyA, WETH[chainId])) ||
+      (currencyB && currencyEquals(currencyB, WETH[chainId])))
   )
 
   const toggleWalletModal = useWalletModalToggle() // toggle wallet when disconnected
@@ -132,7 +133,7 @@ export default function AddLiquidity({
     if (!parsedAmountA || !parsedAmountB || !currencyA || !currencyB || !deadline) {
       return
     }
-
+    console.log('router', router)
     const amountsMin = {
       [Field.CURRENCY_A]: calculateSlippageAmount(parsedAmountA, noLiquidity ? 0 : allowedSlippage)[0],
       [Field.CURRENCY_B]: calculateSlippageAmount(parsedAmountB, noLiquidity ? 0 : allowedSlippage)[0]
@@ -146,8 +147,10 @@ export default function AddLiquidity({
       const tokenBIsETH = currencyB === ETHER
       estimate = router.estimateGas.addLiquidityATP
       method = router.addLiquidityATP
+      var address = wrappedCurrency(tokenBIsETH ? currencyA : currencyB, chainId)?.address
+      address = getBech32Address(address) ?? ""
       args = [
-        wrappedCurrency(tokenBIsETH ? currencyA : currencyB, chainId)?.address ?? '', // token
+        address, // token
         (tokenBIsETH ? parsedAmountA : parsedAmountB).raw.toString(), // token desired
         amountsMin[tokenBIsETH ? Field.CURRENCY_A : Field.CURRENCY_B].toString(), // token min
         amountsMin[tokenBIsETH ? Field.CURRENCY_B : Field.CURRENCY_A].toString(), // eth min
@@ -158,9 +161,13 @@ export default function AddLiquidity({
     } else {
       estimate = router.estimateGas.addLiquidity
       method = router.addLiquidity
+      var address1 = wrappedCurrency(currencyA, chainId)?.address ?? ''
+      address1 = getBech32Address(address) ?? ""
+      var address2 = wrappedCurrency(currencyB, chainId)?.address ?? '',
+      address2 = getBech32Address(address) ?? ""
       args = [
-        wrappedCurrency(currencyA, chainId)?.address ?? '',
-        wrappedCurrency(currencyB, chainId)?.address ?? '',
+        address1,
+        address2,
         parsedAmountA.raw.toString(),
         parsedAmountB.raw.toString(),
         amountsMin[Field.CURRENCY_A].toString(),
@@ -170,6 +177,8 @@ export default function AddLiquidity({
       ]
       value = null
     }
+    console.log('value', value)
+    console.log('args', args)
 
     setAttemptingTxn(true)
     await estimate(...args, value ? { value } : {})
@@ -264,9 +273,8 @@ export default function AddLiquidity({
     )
   }
 
-  const pendingText = `Supplying ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${
-    currencies[Field.CURRENCY_A]?.symbol
-  } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencies[Field.CURRENCY_B]?.symbol}`
+  const pendingText = `Supplying ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${currencies[Field.CURRENCY_A]?.symbol
+    } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencies[Field.CURRENCY_B]?.symbol}`
 
   const handleCurrencyASelect = useCallback(
     (currencyA: Currency) => {

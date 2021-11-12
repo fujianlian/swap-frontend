@@ -3,7 +3,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { injected } from '../connectors'
 
-export const ROUTER_ADDRESS = 'atp1qat8eans50a36h020e7spc7qxgm9sumjxyldgk'
+export const ROUTER_ADDRESS = 'atp1hutcd8vh3zmduruq2f600qey92hdzlxtkaq3lq'
 
 // export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
@@ -21,15 +21,15 @@ export const COMP = new Token(ChainId.MAINNET, '0xc00e94Cb662C3520282E6f57172140
 export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2', 18, 'MKR', 'Maker')
 export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
 export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', 18, 'WBTC', 'Wrapped BTC')
-export const aUSDT = new Token(ChainId.ALAYA, '0x097e063ff248e76945f174f0c4c489b565d70678', 6, 'aUSDT', 'Alaya USDT')
+export const aUSDT = new Token(ChainId.ALAYA, '0x03d4179642c16d186ae5372e35e1ede9bf719925', 6, 'aUSDT', 'Alaya USDT')
 
 // TODO this is only approximate, it's actually based on blocks
 export const PROPOSAL_LENGTH_IN_DAYS = 7
 
-export const GOVERNANCE_ADDRESS = '0xa7370f94b5ffa03b07f9a0d12291c3ed764bed0c'
-export const TIMELOCK_ADDRESS = '0x91f67c872401f18b85c66afc4bed8f641fd13bc5'
+export const GOVERNANCE_ADDRESS = '0x2e302e857da6d2ad307995c8b5a0f95fda3fe304'
+export const TIMELOCK_ADDRESS = '0x8183ec30ac550c637c843737917555b428e49e0a'
 
-const UNI_ADDRESS = '0x690837152cf183fab687e6df331c619e8433ab01'
+const UNI_ADDRESS = '0x485a0884bb8d6d98af9970dd74d6557ab776eda7'
 export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),

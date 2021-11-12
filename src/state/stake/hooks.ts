@@ -39,7 +39,7 @@ export const STAKING_REWARDS_INFO: {
   [ChainId.ALAYA]: [
     {
       tokens: [WETH[ChainId.ALAYA], aUSDT],
-      stakingRewardAddress: 'atp1p9lqv0ljfrnkj303wncvf3yfk4jawpncj0gds8'
+      stakingRewardAddress: 'atp1q02p09jzc9k3s6h9xuhrtc0daxlhrxf92nkz69'
     }
   ]
 }

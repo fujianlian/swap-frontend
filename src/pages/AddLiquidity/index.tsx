@@ -133,7 +133,7 @@ export default function AddLiquidity({
     if (!parsedAmountA || !parsedAmountB || !currencyA || !currencyB || !deadline) {
       return
     }
-    console.log('router', router)
+    console.log('router', account)
     const amountsMin = {
       [Field.CURRENCY_A]: calculateSlippageAmount(parsedAmountA, noLiquidity ? 0 : allowedSlippage)[0],
       [Field.CURRENCY_B]: calculateSlippageAmount(parsedAmountB, noLiquidity ? 0 : allowedSlippage)[0]
@@ -162,9 +162,9 @@ export default function AddLiquidity({
       estimate = router.estimateGas.addLiquidity
       method = router.addLiquidity
       var address1 = wrappedCurrency(currencyA, chainId)?.address ?? ''
-      address1 = getBech32Address(address) ?? ""
+      address1 = getBech32Address(address1) ?? ""
       var address2 = wrappedCurrency(currencyB, chainId)?.address ?? '',
-      address2 = getBech32Address(address) ?? ""
+      address2 = getBech32Address(address2) ?? ""
       args = [
         address1,
         address2,

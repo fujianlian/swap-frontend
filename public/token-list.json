@@ -1,6 +1,6 @@
 {
   "name":"Alaya Default List",
-  "logoURI":"http://localhost:3000/images/cbaf2.png",
+  "logoURI":"http://16.162.161.200:8080/images/cbaf2.png",
   "keywords":[
     "defi"
   ],
@@ -11,7 +11,7 @@
       "symbol": "WATP",
       "decimals": 18,
       "chainId": 201030,
-      "logoURI": "http://localhost:3000/WATP.svg"
+      "logoURI": "http://16.162.161.200:8080/WATP.svg"
     },
     {
       "chainId":201030,
@@ -19,7 +19,7 @@
       "name":"Alaya USDT",
       "symbol":"aUSDT",
       "decimals":6,
-      "logoURI": "http://localhost:3000/aUSDT.svg"
+      "logoURI": "http://16.162.161.200:8080/aUSDT.svg"
     },
     {
       "chainId":201030,
@@ -27,7 +27,7 @@
       "name":"Alaya ETH",
       "symbol":"aETH",
       "decimals":18,
-      "logoURI":"http://localhost:3000/aETH.svg"
+      "logoURI":"http://16.162.161.200:8080/aETH.svg"
     }
   ],
   "timestamp":"2020-12-18T03:00:52.239+00:00",

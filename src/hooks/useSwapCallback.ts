@@ -13,6 +13,7 @@ import { useV1ExchangeContract } from './useContract'
 import useTransactionDeadline from './useTransactionDeadline'
 import useENS from './useENS'
 import { Version } from './useToggledVersion'
+import { decodeBech32Address, isBech32Address } from '@alayanetwork/web3-utils';
 
 export enum SwapCallbackState {
   INVALID,
@@ -52,7 +53,8 @@ function useSwapCallArguments(
   const { account, library } = useActiveWeb3React()
   const chainId: ChainId = parseInt(process.env.REACT_APP_CHAIN_ID ?? '201018')
   const { address: recipientAddress } = useENS(recipientAddressOrName)
-  const recipient = recipientAddressOrName === null ? account : recipientAddress
+  var recipient = recipientAddressOrName === null ? account : recipientAddress
+  recipient = isBech32Address(recipient ?? "") ? decodeBech32Address(recipient ?? "") : recipient
   const deadline = useTransactionDeadline()
 
   const v1Exchange = useV1ExchangeContract(useV1TradeExchangeAddress(trade), true)
@@ -68,7 +70,6 @@ function useSwapCallArguments(
     }
 
     const swapMethods = []
-
     switch (tradeVersion) {
       case Version.v2:
         swapMethods.push(
@@ -214,11 +215,10 @@ export function useSwapCallback(
             const withRecipient =
               recipient === account
                 ? base
-                : `${base} to ${
-                    recipientAddressOrName && isAddress(recipientAddressOrName)
-                      ? shortenAddress(recipientAddressOrName)
-                      : recipientAddressOrName
-                  }`
+                : `${base} to ${recipientAddressOrName && isAddress(recipientAddressOrName)
+                  ? shortenAddress(recipientAddressOrName)
+                  : recipientAddressOrName
+                }`
 
             const withVersion =
               tradeVersion === Version.v2 ? withRecipient : `${withRecipient} on ${(tradeVersion as any).toUpperCase()}`

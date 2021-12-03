@@ -4,9 +4,16 @@
   "homepage": ".",
   "private": true,
   "devDependencies": {
-    "@ethersproject/experimental": "^5.0.1",
+    "@alayanetwork/ethereumjs-util": "^5.2.1",
     "@alayanetwork/ethers-contracts": "^5.0.1",
     "@alayanetwork/ethers-providers": "^5.0.2",
+    "@alayanetwork/token-lists": "^1.0.0-beta.17",
+    "@alayanetwork/uniswap-sdk": "^3.0.3",
+    "@alayanetwork/uniswap-v2-periphery": "^1.0.1",
+    "@alayanetwork/web3-react-core": "^6.1.2",
+    "@alayanetwork/web3-react-injected-connector": "^6.1.2",
+    "@alayanetwork/web3-utils": "^0.13.2",
+    "@ethersproject/experimental": "^5.0.1",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -32,17 +39,11 @@
     "@uniswap/governance": "^1.0.2",
     "@uniswap/liquidity-staker": "^1.0.2",
     "@uniswap/merkle-distributor": "1.0.1",
-    "@alayanetwork/uniswap-sdk": "^3.0.3",
-    "@alayanetwork/token-lists": "^1.0.0-beta.17",
     "@uniswap/v2-core": "1.0.0",
-    "@alayanetwork/uniswap-v2-periphery": "^1.0.1",
-    "@alayanetwork/web3-react-core": "^6.1.2",
     "@web3-react/fortmatic-connector": "^6.0.9",
     "@web3-react/portis-connector": "^6.0.9",
     "@web3-react/walletconnect-connector": "^6.1.1",
     "@web3-react/walletlink-connector": "^6.0.9",
-    "@alayanetwork/ethereumjs-util": "^5.2.1",
-    "@alayanetwork/web3-utils": "^0.13.2",
     "ajv": "^6.12.3",
     "cids": "^1.0.0",
     "copy-to-clipboard": "^3.2.0",
@@ -90,8 +91,7 @@
     "styled-components": "^4.2.0",
     "typescript": "^3.8.3",
     "use-count-up": "^2.2.5",
-    "wcag-contrast": "^3.0.0",
-    "@alayanetwork/web3-react-injected-connector": "^6.1.2"
+    "wcag-contrast": "^3.0.0"
   },
   "resolutions": {
     "@walletconnect/web3-provider": "1.1.1-alpha.0"
@@ -101,6 +101,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "depoly": "gh-pages -d build",
     "integration-test": "start-server-and-test 'serve build -l 3000' http://16.162.161.200:8080 'cypress run'"
   },
   "eslintConfig": {
@@ -121,5 +122,8 @@
       "last 1 safari version"
     ]
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }

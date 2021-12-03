@@ -1,0 +1,40 @@
+{
+  "name":"Alaya Default List",
+  "logoURI":"http://16.162.161.200:8080/images/cbaf2.png",
+  "keywords":[
+    "defi"
+  ],
+  "tokens":[
+    {
+      "name": "Wrapped ATP",
+      "address": "atp1xqq56z4e5vptngz55dtz6a0tff6zuanqa7s3rf",
+      "symbol": "WATP",
+      "decimals": 18,
+      "chainId": 201030,
+      "logoURI": "http://16.162.161.200:8080/WATP.svg"
+    },
+    {
+      "chainId":201030,
+      "address":"atp1gakmw248n06vkdyv3mpes5f29aq2hvdeje9c23",
+      "name":"Alaya USDT",
+      "symbol":"aUSDT",
+      "decimals":6,
+      "logoURI": "http://16.162.161.200:8080/aUSDT.svg"
+    },
+    {
+      "chainId":201030,
+      "address":"atp1fxe3drv2yte0k8cstjr3v7at4ckrcmnzqalh0s",
+      "name":"Alaya ETH",
+      "symbol":"aETH",
+      "decimals":18,
+      "logoURI":"http://16.162.161.200:8080/aETH.svg"
+    }
+  ],
+  "timestamp":"2020-12-18T03:00:52.239+00:00",
+  "version":{
+    "major":67,
+    "minor":4,
+    "patch":0
+  }
+}
+
